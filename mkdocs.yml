@@ -1,0 +1,91 @@
+# Project information
+site_name: Python Grammer
+site_url: https://kzrashi.github.io/python-grammer/
+site_author: kzrashi
+site_description: >-
+  This site illustrates grammer of python programing language for beginners.
+
+# Repository
+## GitのURL
+repo_url: https://github.com/kzrashi/python-grammer
+## 表示文字列
+repo_name: kzrashi/python-grammer
+
+
+# Copyright
+copyright: "Copyright © 2021 -  kzrashi All Rights Reserved."
+
+
+# Configuration
+theme:
+  name: material
+  language: ja
+  # 左上のアイコン
+  logo: assets/python_94570.svg
+  icon:
+    # Gitリポジトリエリアのアイコン
+    repo: fontawesome/brands/github    # icon:
+    #   logo: assets/python_94570.svg
+  #        repo: fontawesome/brands/git-alt
+
+  # ファビコン
+  favicon: assets/python_94570.svg
+  # タブ表示を有効.
+  features:
+    - tabs
+    # 今テンスをナビゲーションに含める
+    # - toc.integrate
+
+# Plugins
+plugins:
+#    - search:
+#
+#      language: 'en, ja'
+# 検索インデックスの単語区切り文字設定
+#        separator: '[\s\-\.]+'
+
+# Customization
+extra:
+  generator: false
+
+# Extensions
+markdown_extensions:
+  # アラート修飾の設定
+  - admonition
+  # コンテンツ内タブ機能
+  - pymdownx.tabbed
+  # スーパーフェンス機能の設定
+  - pymdownx.superfences
+  # コンテンツの折りたたみ設定
+  - pymdownx.details
+
+  - codehilite:
+      #        linenums: true
+      guess_lang: false
+      use_pygments: false
+      noclasses: true
+  - toc:
+      permalink: true
+#    - fontawesome_markdown
+
+# CSS
+extra_css:
+  - "css/custom.css"
+
+
+
+
+
+
+# # Navigation
+# nav:
+#     # - はじめに: index.md
+#     - 四則演算:
+#         - 基本: 01_calcurate/01_calcurate_entry.md
+#         - 発展: 01_calcurate/02_calcurate_basic.md
+
+
+# Google Analytics
+google_analytics:
+  - !!python/object/apply:os.getenv ["GOOGLE_ANALYTICS_KEY"]
+  - auto
