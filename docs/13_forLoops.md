@@ -1,6 +1,4 @@
-# 繰り返し(for文)
-
-
+# for文(For Loops)
 
 ## 
 

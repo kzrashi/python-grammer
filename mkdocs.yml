@@ -59,6 +59,23 @@ markdown_extensions:
   # コンテンツの折りたたみ設定
   - pymdownx.details
 
+  - pymdownx.critic
+  ## ハイライト指定
+  - pymdownx.mark
+
+  # - pymdownx.critic.mode: view
+
+  # - pymdownx.betterem:
+  #   smart_enable: all
+
+  # - pymdownx.caret
+  # - pymdownx.tilde
+  # - pymdownx.smartsymbols
+  
+  
+  
+
+
   - codehilite:
       #        linenums: true
       guess_lang: false
@@ -78,11 +95,31 @@ extra_css:
 
 
 # # Navigation
-# nav:
-#     # - はじめに: index.md
-#     - 四則演算:
-#         - 基本: 01_calcurate/01_calcurate_entry.md
-#         - 発展: 01_calcurate/02_calcurate_basic.md
+nav:
+    - はじめに: index.md
+    - 実行環境: 00_installation.md
+    - 標準出力: 00_print.md
+    - 変数:
+      - 基本            : 01_00_variable.md
+      - 整数型(int)     : 01_01_variable_int.md
+      - 小数点型(float) : 01_02_variable float.md
+      - 真偽型(bool)    : 01_03_variable bool.md
+      - 文字列型(str)    : 01_04_variable_str.md
+    - 標準入力: 01_input.md
+    - 演算    : 01_calcurate.md
+    - リスト  : 03_list.md
+    - 辞書:
+      - 表示    : 04_01_dictionary_disp.md
+      - 追加    : 04_02_dictionary_add.md
+      - 削除    : 04_03_dictionary_delete.md
+    - タプル  : 05_tuples.md
+    - if文    : 12_ifStatements.md
+    - 条件式   :  14_condition.md
+    - for文    :  13_forLoops.md
+    # - while文    :
+    # - while文    : 
+    # - 関数    : 
+    # - 関数    : 
 
 
 # Google Analytics

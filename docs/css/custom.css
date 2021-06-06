@@ -31,3 +31,7 @@
 .md-grid {
     max-width: 2040px;
 }
+
+.md-typeset__table td{
+    white-space: nowrap;
+}
