@@ -13,14 +13,14 @@
         <meta name="author" content="kzrashi">
       
       
-        <link rel="canonical" href="https://kzrashi.github.io/python-grammer/01_calcurate_entry/">
+        <link rel="canonical" href="https://kzrashi.github.io/python-grammer/01_01_variable_int/">
       
       <link rel="icon" href="../assets/python_94570.svg">
       <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.6">
     
     
       
-        <title>四則演算 - Python Grammer</title>
+        <title>整数型(int) - Python Grammer</title>
       
     
     
@@ -71,7 +71,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#_1" class="md-skip">
+        <a href="#int" class="md-skip">
           コンテンツにスキップ
         </a>
       
@@ -100,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              四則演算
+              整数型(int)
             
           </span>
         </div>
@@ -206,7 +206,7 @@
   
     <li class="md-nav__item">
       <a href=".." class="md-nav__link">
-        Python-Grammer
+        はじめに
       </a>
     </li>
   
@@ -220,7 +220,22 @@
   
   
     <li class="md-nav__item">
-      <a href="../00_print%E6%96%87/" class="md-nav__link">
+      <a href="../00_installation/" class="md-nav__link">
+        実行環境
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../00_print/" class="md-nav__link">
         標準出力
       </a>
     </li>
@@ -236,6 +251,41 @@
     
   
   
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
+      
+      <label class="md-nav__link" for="__nav_4">
+        変数
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="変数" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          変数
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01_00_variable/" class="md-nav__link">
+        基本
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+    
+  
+  
     <li class="md-nav__item md-nav__item--active">
       
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
@@ -244,68 +294,52 @@
         
       
       
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          四則演算
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
       <a href="./" class="md-nav__link md-nav__link--active">
-        四則演算
+        整数型(int)
       </a>
       
-        
-<nav class="md-nav md-nav--secondary" aria-label="目次">
+    </li>
+  
+
+          
+            
   
   
   
-    
+    <li class="md-nav__item">
+      <a href="../01_02_variable%20float/" class="md-nav__link">
+        小数点型(float)
+      </a>
+    </li>
+  
+
+          
+            
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目次
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#addition" class="md-nav__link">
-    足し算(addition)
-  </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#subtraction" class="md-nav__link">
-    引き算(subtraction)
-  </a>
+    <li class="md-nav__item">
+      <a href="../01_03_variable%20bool/" class="md-nav__link">
+        真偽型(bool)
+      </a>
+    </li>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#multiplication" class="md-nav__link">
-    掛け算(multiplication)
-  </a>
+
+          
+            
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#division" class="md-nav__link">
-    割り算(division)
-  </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    剰余(余り)計算
-  </a>
   
-</li>
-      
-    </ul>
+    <li class="md-nav__item">
+      <a href="../01_04_variable_str/" class="md-nav__link">
+        文字列型(str)
+      </a>
+    </li>
   
-</nav>
-      
+
+          
+        </ul>
+      </nav>
     </li>
   
 
@@ -318,8 +352,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../02_calcurate_basic/" class="md-nav__link">
-        四則演算(少し発展)
+      <a href="../01_input/" class="md-nav__link">
+        標準入力
       </a>
     </li>
   
@@ -333,8 +367,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../03_%E3%83%AA%E3%82%B9%E3%83%88/" class="md-nav__link">
-        リスト(List)
+      <a href="../01_calcurate/" class="md-nav__link">
+        演算
       </a>
     </li>
   
@@ -348,8 +382,89 @@
   
   
     <li class="md-nav__item">
-      <a href="../04_%E8%BE%9E%E6%9B%B8/" class="md-nav__link">
-        辞書(Dictionary)
+      <a href="../03_list/" class="md-nav__link">
+        リスト
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8" type="checkbox" id="__nav_8" >
+      
+      <label class="md-nav__link" for="__nav_8">
+        辞書
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="辞書" data-md-level="1">
+        <label class="md-nav__title" for="__nav_8">
+          <span class="md-nav__icon md-icon"></span>
+          辞書
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04_01_dictionary_disp/" class="md-nav__link">
+        表示
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04_02_dictionary_add/" class="md-nav__link">
+        追加
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04_03_dictionary_delete/" class="md-nav__link">
+        削除
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05_tuples/" class="md-nav__link">
+        タプル
       </a>
     </li>
   
@@ -363,52 +478,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../05_%E3%82%BF%E3%83%97%E3%83%AB/" class="md-nav__link">
-        タプル(Tuples)
-      </a>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../06_%E5%9E%8B%E3%82%AD%E3%83%A3%E3%82%B9%E3%83%88/" class="md-nav__link">
-        型キャスト
-      </a>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../11_%E6%9D%A1%E4%BB%B6%E5%BC%8F/" class="md-nav__link">
-        条件式
-      </a>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../12_IF%E6%96%87/" class="md-nav__link">
+      <a href="../12_ifStatements/" class="md-nav__link">
         if文
       </a>
     </li>
@@ -423,8 +493,23 @@
   
   
     <li class="md-nav__item">
-      <a href="../13_for%E6%96%87/" class="md-nav__link">
-        繰り返し(for文)
+      <a href="../14_condition/" class="md-nav__link">
+        条件式
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../13_forLoops/" class="md-nav__link">
+        for文
       </a>
     </li>
   
@@ -449,49 +534,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目次
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#addition" class="md-nav__link">
-    足し算(addition)
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#subtraction" class="md-nav__link">
-    引き算(subtraction)
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#multiplication" class="md-nav__link">
-    掛け算(multiplication)
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#division" class="md-nav__link">
-    割り算(division)
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    剰余(余り)計算
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -502,68 +544,56 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/kzrashi/python-grammer/edit/master/docs/01_calcurate_entry.md" title="編集" class="md-content__button md-icon">
+                  <a href="https://github.com/kzrashi/python-grammer/edit/master/docs/01_01_variable_int.md" title="編集" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
                 
-                <h1 id="_1">四則演算<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
-<h4 id="addition">足し算(addition)<a class="headerlink" href="#addition" title="Permanent link">&para;</a></h4>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;</span> <span class="mi">3</span> <span class="o">+</span> <span class="mi">2</span>
-<span class="mi">5</span>
-</code></pre></div>
-<h4 id="subtraction">引き算(subtraction)<a class="headerlink" href="#subtraction" title="Permanent link">&para;</a></h4>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;</span> <span class="mi">3</span> <span class="o">-</span> <span class="mi">2</span>
-<span class="mi">1</span>
-</code></pre></div>
-<h4 id="multiplication">掛け算(multiplication)<a class="headerlink" href="#multiplication" title="Permanent link">&para;</a></h4>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;</span> <span class="mi">3</span> <span class="o">*</span> <span class="mi">2</span>
-<span class="mi">6</span>
-</code></pre></div>
-<h4 id="division">割り算(division)<a class="headerlink" href="#division" title="Permanent link">&para;</a></h4>
+                <h1 id="int">整数型(int)<a class="headerlink" href="#int" title="Permanent link">&para;</a></h1>
 <ul>
-<li>
-<p>他の言語と異なり、pythonでは<strong>/</strong>を使用する割り算では、小数点以下まで計算される<br />
-  小数点以下も含めて計算する場合には<strong>//</strong>を使用する  </p>
-</li>
-<li>
-<p>小数点を切り捨てせずに計算する</p>
-</li>
+<li>整数を扱うための型</li>
 </ul>
 <div class="tabbed-set" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">python</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;</span> <span class="mi">5</span> <span class="o">/</span> <span class="mi">2</span>
-<span class="mf">2.5</span>
-</code></pre></div>
+<p>ソースコード
+<div class="highlight"><pre><span></span><code><span class="c1"># 変数の宣言</span>
+<span class="n">num</span> <span class="o">=</span> <span class="mi">3</span>
+
+<span class="c1"># 変数の内容の表示</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">num</span><span class="p">)</span> 
+
+<span class="c1"># 変数の型の表示</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">num</span><span class="p">))</span> 
+</code></pre></div></p>
+<p>出力結果
+<div class="highlight"><pre><span></span><code><span class="mi">3</span>
+<span class="o">&lt;</span><span class="k">class</span> <span class="err">&#39;</span><span class="nc">int</span><span class="s1">&#39;&gt;</span>
+</code></pre></div></p>
 </div>
 <input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><label for="__tabbed_1_2">c++</label><div class="tabbed-content">
 <ul>
-<li>C++では整数型の割り算をすると、小数点以下は切り捨てられるため、浮動小数点型に変換して計算する</li>
+<li>Ｃ言語では、変数を使う際に、どの型を使うか指定する必要があります  </li>
 </ul>
+<p>ソースコード
 <div class="highlight"><pre><span></span><code><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="c1">  //stdクラスを使用するのに必要</span><span class="cp"></span>
 
-<span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="k">static_cast</span><span class="o">&lt;</span><span class="kt">float</span><span class="o">&gt;</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span> <span class="o">/</span> <span class="k">static_cast</span><span class="o">&lt;</span><span class="kt">float</span><span class="o">&gt;</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
-</code></pre></div>
-</div>
-</div>
-<ul>
-<li>小数点を切り捨てる</li>
-</ul>
-<div class="tabbed-set" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><label for="__tabbed_2_1">python</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="mi">5</span> <span class="o">//</span> <span class="mi">2</span><span class="p">)</span>
-<span class="mi">2</span>
-</code></pre></div>
-</div>
-<input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><label for="__tabbed_2_2">c++</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="c1">  //stdクラスを使用するのに必要</span><span class="cp"></span>
+<span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">){</span>
+   <span class="c1">//変数(num)の前に使用したい型を記述する</span>
+   <span class="kt">int</span> <span class="n">num</span> <span class="o">=</span><span class="mi">3</span><span class="p">;</span>
 
-<span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="mi">5</span> <span class="o">/</span> <span class="mi">2</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
-</code></pre></div>
+   <span class="c1">// 変数の内容の表示</span>
+   <span class="c1">// 改行するためには、最後にstd::endlが必要</span>
+   <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">num</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+
+   <span class="c1">// 変数の型の表示</span>
+   <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="k">typeid</span><span class="p">(</span><span class="n">num</span><span class="p">).</span><span class="n">name</span><span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></p>
+<p>出力結果
+<div class="highlight"><pre><span></span><code><span class="mi">3</span>
+<span class="n">i</span>
+</code></pre></div></p>
 </div>
 </div>
-<h4 id="_2">剰余(余り)計算<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h4>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;</span> <span class="mi">7</span> <span class="o">%</span> <span class="mi">4</span>
-<span class="mi">3</span>
-</code></pre></div>
                 
               
               
@@ -582,7 +612,7 @@
   
     <nav class="md-footer__inner md-grid" aria-label="フッター">
       
-        <a href="../00_print%E6%96%87/" class="md-footer__link md-footer__link--prev" rel="prev">
+        <a href="../01_00_variable/" class="md-footer__link md-footer__link--prev" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -591,19 +621,19 @@
               <span class="md-footer__direction">
                 前
               </span>
-              標準出力
+              基本
             </div>
           </div>
         </a>
       
       
-        <a href="../02_calcurate_basic/" class="md-footer__link md-footer__link--next" rel="next">
+        <a href="../01_02_variable%20float/" class="md-footer__link md-footer__link--next" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 次
               </span>
-              四則演算(少し発展)
+              小数点型(float)
             </div>
           </div>
           <div class="md-footer__button md-icon">
