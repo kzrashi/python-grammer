@@ -1,79 +1,153 @@
 # 標準出力
-- 画面に文字や数値を出力する機能。
+print関数を使うことで画面に文字や数値を出力することが出来ます。
 
 
 ### 固定文字列の出力
 - print("出力したい文字列")やprint(出力したい変数名)を指定出力します。
 
 === "python"
+    ソースコード
     ```python
-    >> print("Hello World") 
-    Hello World
+    # print文で出力する
+    print("Hello World") 
 
     # 数値でも表示出来る
-    >> print(123) 
+    print(123) 
+    ``` 
+
+    出力結果
+    ```python
+    Hello World
+
     123
     ``` 
 
 === "c++"
-    ```C++
-    #include <iostream>
+    ソースコード
+    ```c++
+    #include <iostream>  //stdクラスを使用するのに必要
     
-    // 改行するためには、最後にstd::coutが必要
-    std::cout << "Hello world" << std::endl;
+    int main(void){
 
-    std::cout << 123 << std::endl;
-    
+        // 改行するためには、最後にstd::endlが必要
+        std::cout << "Hello world" << std::endl;
+  
+        // 数値でも表示出来る
+        std::cout << 123 << std::endl;
+    }
     ``` 
+
+    出力結果
+    ```c++
+    Hello world
+
+    123
+    ```
 
 ### 変数の出力
 
 === "python"
-    - 文字列(str)型の変数の場合
+    - 文字列(str)型の変数を出力する場合
+
+    ソースコード
     ```python
-    >> str="Hello World"
-    >> print(str)
-    Hello World
-    ``` 
+    str="Hello World"
+    print(str)
+    ```
+
+    出力結果
+    ```python
+    Hello world
+    ```
 
     - 数値(int)型の変数を出力する場合
+
+    ソースコード
     ```python
-    >> num=123
-    >> print(num)
-    123
+    num=123
+    print(num)
     ``` 
 
-    - bool型の変数を出力する場合
+    出力結果
     ```python
-    >> valid = False
-    >> print(valid)
-    False
+    123
+    ```
+
+    - bool型の変数を出力する場合
+
+    ソースコード
+    ```python
+    valid = False
+    print(valid)
     ``` 
+
+    出力結果
+    ```python
+    False
+    ```
 
 === "c++"
     - 文字列(str)型の変数の場合
-    ```C++
-    #include <iostream>  //stdクラスを使用するのに必要
 
-    std::string str="Hello World";
-    std::cout << str << std::endl;
-    ``` 
+    ソースコード
+    ```c++
+    #include <iostream>  //stdクラスを使用するのに必要
+    int main(void){
+
+        std::string str="Hello World";
+
+        // 変数の表示
+        // 改行するためには、最後にstd::endlが必要
+        std::cout << str << std::endl;
+    }
+    ```
+
+    出力結果
+    ```c++
+    False
+    ```
 
     - 数値(int)型の変数を出力する場合
-    ```C++
+ 
+    ソースコード
+    ```c++
     #include <iostream>  //stdクラスを使用するのに必要
 
-    int num = 123;
-    std::cout << num << std::endl;
-    ``` 
+    int main(void){
+
+        int num = 123;
+
+        // 変数の表示
+        // 改行するためには、最後にstd::endlが必要
+        std::cout << num << std::endl;
+    }
+    ```
+
+    出力結果
+    ```c++
+    123
+    ```
 
     - bool型の変数を出力する場合
-    ```C++
+ 
+    ソースコード
+    ```c++
     #include <iostream>  //stdクラスを使用するのに必要
 
-    bool valid = false;
-    std::cout << valid << std::endl;
-    ``` 
+    int main(void){
+
+        bool valid = false;
+
+        // 変数の表示
+        // 改行するためには、最後にstd::endlが必要
+        std::cout << valid << std::endl;
+    }
+    ```
+
+    出力結果
+    ```c++
+    0
+    ```
 
 ### ２つ以上の変数の出力
 固定文字列＋複数の変数(例：変数numの値はXXです。)の形式で出力することが多いと思います。  
