@@ -16,7 +16,7 @@
         <link rel="canonical" href="https://kzrashi.github.io/python-grammer/00_print/">
       
       <link rel="icon" href="../assets/python_94570.svg">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.6">
+      <meta name="generator" content="mkdocs-1.2.1, mkdocs-material-7.1.7">
     
     
       
@@ -24,7 +24,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.875de78c.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.ca7ac06f.min.css">
       
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.f1a3b89f.min.css">
@@ -689,85 +689,132 @@
                 
                 
                 <h1 id="_1">標準出力<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
-<ul>
-<li>画面に文字や数値を出力する機能。</li>
-</ul>
+<p>print関数を使うことで画面に文字や数値を出力することが出来ます。</p>
 <h3 id="_2">固定文字列の出力<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
 <ul>
 <li>print("出力したい文字列")やprint(出力したい変数名)を指定出力します。</li>
 </ul>
 <div class="tabbed-set" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">python</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;</span> <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello World&quot;</span><span class="p">)</span> 
-<span class="n">Hello</span> <span class="n">World</span>
+<p>ソースコード
+<div class="highlight"><pre><span></span><code><span class="c1"># print文で出力する</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello World&quot;</span><span class="p">)</span> 
 
 <span class="c1"># 数値でも表示出来る</span>
-<span class="o">&gt;&gt;</span> <span class="nb">print</span><span class="p">(</span><span class="mi">123</span><span class="p">)</span> 
+<span class="nb">print</span><span class="p">(</span><span class="mi">123</span><span class="p">)</span> 
+</code></pre></div></p>
+<p>出力結果
+<div class="highlight"><pre><span></span><code><span class="n">Hello</span> <span class="n">World</span>
+
 <span class="mi">123</span>
-</code></pre></div>
+</code></pre></div></p>
 </div>
 <input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><label for="__tabbed_1_2">c++</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp"></span>
+<p>ソースコード
+<div class="highlight"><pre><span></span><code><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="c1">  //stdクラスを使用するのに必要</span><span class="cp"></span>
 
-<span class="c1">// 改行するためには、最後にstd::coutが必要</span>
-<span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;Hello world&quot;</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+<span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">){</span>
 
-<span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="mi">123</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
-</code></pre></div>
+    <span class="c1">// 改行するためには、最後にstd::endlが必要</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;Hello world&quot;</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+
+    <span class="c1">// 数値でも表示出来る</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="mi">123</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></p>
+<p>出力結果
+<div class="highlight"><pre><span></span><code><span class="n">Hello</span> <span class="n">world</span>
+
+<span class="mi">123</span>
+</code></pre></div></p>
 </div>
 </div>
 <h3 id="_3">変数の出力<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
 <div class="tabbed-set" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><label for="__tabbed_2_1">python</label><div class="tabbed-content">
 <ul>
-<li>
-<p>文字列(str)型の変数の場合
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;</span> <span class="nb">str</span><span class="o">=</span><span class="s2">&quot;Hello World&quot;</span>
-<span class="o">&gt;&gt;</span> <span class="nb">print</span><span class="p">(</span><span class="nb">str</span><span class="p">)</span>
-<span class="n">Hello</span> <span class="n">World</span>
-</code></pre></div></p>
-</li>
-<li>
-<p>数値(int)型の変数を出力する場合
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;</span> <span class="n">num</span><span class="o">=</span><span class="mi">123</span>
-<span class="o">&gt;&gt;</span> <span class="nb">print</span><span class="p">(</span><span class="n">num</span><span class="p">)</span>
-<span class="mi">123</span>
-</code></pre></div></p>
-</li>
-<li>
-<p>bool型の変数を出力する場合
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;</span> <span class="n">valid</span> <span class="o">=</span> <span class="kc">False</span>
-<span class="o">&gt;&gt;</span> <span class="nb">print</span><span class="p">(</span><span class="n">valid</span><span class="p">)</span>
-<span class="kc">False</span>
-</code></pre></div></p>
-</li>
+<li>文字列(str)型の変数を出力する場合</li>
 </ul>
+<p>ソースコード
+<div class="highlight"><pre><span></span><code><span class="nb">str</span><span class="o">=</span><span class="s2">&quot;Hello World&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">str</span><span class="p">)</span>
+</code></pre></div></p>
+<p>出力結果
+<div class="highlight"><pre><span></span><code><span class="n">Hello</span> <span class="n">world</span>
+</code></pre></div></p>
+<ul>
+<li>数値(int)型の変数を出力する場合</li>
+</ul>
+<p>ソースコード
+<div class="highlight"><pre><span></span><code><span class="n">num</span><span class="o">=</span><span class="mi">123</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">num</span><span class="p">)</span>
+</code></pre></div></p>
+<p>出力結果
+<div class="highlight"><pre><span></span><code><span class="mi">123</span>
+</code></pre></div></p>
+<ul>
+<li>bool型の変数を出力する場合</li>
+</ul>
+<p>ソースコード
+<div class="highlight"><pre><span></span><code><span class="n">valid</span> <span class="o">=</span> <span class="kc">False</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">valid</span><span class="p">)</span>
+</code></pre></div></p>
+<p>出力結果
+<div class="highlight"><pre><span></span><code><span class="kc">False</span>
+</code></pre></div></p>
 </div>
 <input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><label for="__tabbed_2_2">c++</label><div class="tabbed-content">
 <ul>
-<li>
-<p>文字列(str)型の変数の場合
-<div class="highlight"><pre><span></span><code><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="c1">  //stdクラスを使用するのに必要</span><span class="cp"></span>
-
-<span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">str</span><span class="o">=</span><span class="s">&quot;Hello World&quot;</span><span class="p">;</span>
-<span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">str</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
-</code></pre></div></p>
-</li>
-<li>
-<p>数値(int)型の変数を出力する場合
-<div class="highlight"><pre><span></span><code><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="c1">  //stdクラスを使用するのに必要</span><span class="cp"></span>
-
-<span class="kt">int</span> <span class="n">num</span> <span class="o">=</span> <span class="mi">123</span><span class="p">;</span>
-<span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">num</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
-</code></pre></div></p>
-</li>
-<li>
-<p>bool型の変数を出力する場合
-<div class="highlight"><pre><span></span><code><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="c1">  //stdクラスを使用するのに必要</span><span class="cp"></span>
-
-<span class="kt">bool</span> <span class="n">valid</span> <span class="o">=</span> <span class="nb">false</span><span class="p">;</span>
-<span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">valid</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
-</code></pre></div></p>
-</li>
+<li>文字列(str)型の変数の場合</li>
 </ul>
+<p>ソースコード
+<div class="highlight"><pre><span></span><code><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="c1">  //stdクラスを使用するのに必要</span><span class="cp"></span>
+<span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">){</span>
+
+    <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">str</span><span class="o">=</span><span class="s">&quot;Hello World&quot;</span><span class="p">;</span>
+
+    <span class="c1">// 変数の表示</span>
+    <span class="c1">// 改行するためには、最後にstd::endlが必要</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">str</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></p>
+<p>出力結果
+<div class="highlight"><pre><span></span><code><span class="n">False</span>
+</code></pre></div></p>
+<ul>
+<li>数値(int)型の変数を出力する場合</li>
+</ul>
+<p>ソースコード
+<div class="highlight"><pre><span></span><code><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="c1">  //stdクラスを使用するのに必要</span><span class="cp"></span>
+
+<span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">){</span>
+
+    <span class="kt">int</span> <span class="n">num</span> <span class="o">=</span> <span class="mi">123</span><span class="p">;</span>
+
+    <span class="c1">// 変数の表示</span>
+    <span class="c1">// 改行するためには、最後にstd::endlが必要</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">num</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></p>
+<p>出力結果
+<div class="highlight"><pre><span></span><code><span class="mi">123</span>
+</code></pre></div></p>
+<ul>
+<li>bool型の変数を出力する場合</li>
+</ul>
+<p>ソースコード
+<div class="highlight"><pre><span></span><code><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="c1">  //stdクラスを使用するのに必要</span><span class="cp"></span>
+
+<span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">){</span>
+
+    <span class="kt">bool</span> <span class="n">valid</span> <span class="o">=</span> <span class="nb">false</span><span class="p">;</span>
+
+    <span class="c1">// 変数の表示</span>
+    <span class="c1">// 改行するためには、最後にstd::endlが必要</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">valid</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></p>
+<p>出力結果
+<div class="highlight"><pre><span></span><code><span class="mi">0</span>
+</code></pre></div></p>
 </div>
 </div>
 <h3 id="2">２つ以上の変数の出力<a class="headerlink" href="#2" title="Permanent link">&para;</a></h3>
@@ -937,7 +984,8 @@ TypeError: %d format: a number is required, not str
   
     <nav class="md-footer__inner md-grid" aria-label="フッター">
       
-        <a href="../00_installation/" class="md-footer__link md-footer__link--prev" rel="prev">
+        
+        <a href="../00_installation/" class="md-footer__link md-footer__link--prev" aria-label="前: 実行環境" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -952,7 +1000,8 @@ TypeError: %d format: a number is required, not str
         </a>
       
       
-        <a href="../01_00_variable/" class="md-footer__link md-footer__link--next" rel="next">
+        
+        <a href="../01_00_variable/" class="md-footer__link md-footer__link--next" aria-label="次: 基本" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
@@ -991,10 +1040,10 @@ TypeError: %d format: a number is required, not str
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "..", "features": ["tabs"], "translations": {"clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "search.config.lang": "ja", "search.config.pipeline": "trimmer, stemmer", "search.config.separator": "[\\s\\-\u3000\u3001\u3002\uff0c\uff0e]+", "search.placeholder": "\u691c\u7d22", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044"}, "search": "../assets/javascripts/workers/search.d351de03.min.js", "version": null}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["tabs"], "translations": {"clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "search.config.lang": "ja", "search.config.pipeline": "trimmer, stemmer", "search.config.separator": "[\\s\\-\u3000\u3001\u3002\uff0c\uff0e]+", "search.placeholder": "\u691c\u7d22", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version.title": "Select version"}, "search": "../assets/javascripts/workers/search.b0710199.min.js", "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.34eae1b6.min.js"></script>
+      <script src="../assets/javascripts/bundle.76f349be.min.js"></script>
       
     
   </body>
