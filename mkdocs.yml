@@ -118,6 +118,7 @@ nav:
     - if文    : 12_ifStatements.md
     - 条件式   :  14_condition.md
     - for文    :  13_forLoops.md
+    - 検索アルゴリズム: 21_search_algorithm.md
     # - while文    :
     # - while文    : 
     # - 関数    : 
