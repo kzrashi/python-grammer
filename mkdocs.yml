@@ -19,7 +19,6 @@ copyright: "Copyright © 2021 -  kzrashi All Rights Reserved."
 # Configuration
 theme:
   name: material
-  custom_dir: custom/
   language: ja
   # 左上のアイコン
   logo: assets/python_94570.svg
