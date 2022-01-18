@@ -39,7 +39,6 @@ theme:
 # Plugins
 plugins:
   - git-revision-date-localized
-# - git-revision-date
 
 #    - search:
 #
