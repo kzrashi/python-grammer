@@ -12,14 +12,14 @@
         <meta name="author" content="kzrashi">
       
       
-        <link rel="canonical" href="https://kzrashi.github.io/python-grammer/01_03_variable%20bool/">
+        <link rel="canonical" href="https://kzrashi.github.io/python-grammer/06_set/">
       
       <link rel="icon" href="../assets/python_94570.svg">
       <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.7">
     
     
       
-        <title>真偽型(bool) - Python Grammer</title>
+        <title>集合 - Python Grammer</title>
       
     
     
@@ -66,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#bool" class="md-skip">
+        <a href="#set" class="md-skip">
           コンテンツにスキップ
         </a>
       
@@ -98,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              真偽型(bool)
+              集合
             
           </span>
         </div>
@@ -217,14 +217,12 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
       
       
       
@@ -287,21 +285,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../01_03_variable%20bool/" class="md-nav__link">
         真偽型(bool)
       </a>
-      
     </li>
   
 
@@ -469,11 +457,120 @@
 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../06_set/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          集合
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         集合
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目次">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目次
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    1. 宣言
+  </a>
+  
+    <nav class="md-nav" aria-label="1. 宣言">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11" class="md-nav__link">
+    1.1. 空宣言
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12" class="md-nav__link">
+    1.2. 文字列
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13" class="md-nav__link">
+    1.3. リストを
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-add" class="md-nav__link">
+    2. 追加(add())
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    3. 削除
+  </a>
+  
+    <nav class="md-nav" aria-label="3. 削除">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-discard" class="md-nav__link">
+    3.1. 要素指定で削除(discard())
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-pop" class="md-nav__link">
+    3.2. ランダムに要素を取り出して削除する(pop())
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-clear" class="md-nav__link">
+    4. 全削除(clear())
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -558,6 +655,89 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目次
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    1. 宣言
+  </a>
+  
+    <nav class="md-nav" aria-label="1. 宣言">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11" class="md-nav__link">
+    1.1. 空宣言
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12" class="md-nav__link">
+    1.2. 文字列
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13" class="md-nav__link">
+    1.3. リストを
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-add" class="md-nav__link">
+    2. 追加(add())
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    3. 削除
+  </a>
+  
+    <nav class="md-nav" aria-label="3. 削除">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-discard" class="md-nav__link">
+    3.1. 要素指定で削除(discard())
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-pop" class="md-nav__link">
+    3.2. ランダムに要素を取り出して削除する(pop())
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-clear" class="md-nav__link">
+    4. 全削除(clear())
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -568,76 +748,148 @@
             <article class="md-content__inner md-typeset">
               
                 
-<a href="https://github.com/kzrashi/python-grammer/edit/master/docs/01_03_variable bool.md" title="編集" class="md-content__button md-icon">
+<a href="https://github.com/kzrashi/python-grammer/edit/master/docs/06_set.md" title="編集" class="md-content__button md-icon">
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
 </a>
 
 
-<h1 id="bool">真偽型(bool)<a class="headerlink" href="#bool" title="Permanent link">&para;</a></h1>
+<h1 id="set">集合(Set)<a class="headerlink" href="#set" title="Permanent link">&para;</a></h1>
 <ul>
-<li>真(True) or 偽(False)のどちからの値を取る型</li>
-<li>Camel case(１文字目が大文字、２文字目以降が小文字)で記載することに注意</li>
+<li>数学の集合のようなもの</li>
+<li>一意にデータしか格納されない</li>
+<li>格納される順番は順不同</li>
+<li></li>
 </ul>
-<div class="tabbed-set" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">python</label><div class="tabbed-content">
+<h2 id="1">1. 宣言<a class="headerlink" href="#1" title="Permanent link">&para;</a></h2>
+<h3 id="11">1.1. 空宣言<a class="headerlink" href="#11" title="Permanent link">&para;</a></h3>
 <p>ソースコード
-<div class="highlight"><pre><span></span><code><span class="c1"># 変数の宣言</span>
-<span class="n">valid</span> <span class="o">=</span> <span class="kc">True</span>
+<div class="highlight"><pre><span></span><code><span class="c1"># 宣言</span>
+<span class="n">set1</span> <span class="o">=</span> <span class="nb">set</span><span class="p">()</span>
 
-<span class="c1"># 変数の内容の表示</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">valid</span><span class="p">)</span> 
-
-<span class="c1"># 変数の型の表示</span>
-<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">valid</span><span class="p">))</span> 
+<span class="c1"># 出力</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">set1</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">set1</span><span class="p">))</span>
 </code></pre></div></p>
 <p>出力結果
-<div class="highlight"><pre><span></span><code><span class="kc">True</span>
-<span class="o">&lt;</span><span class="k">class</span> <span class="err">&#39;</span><span class="nc">bool</span><span class="s1">&#39;&gt;</span>
+<div class="highlight"><pre><span></span><code><span class="nb">set</span><span class="p">()</span>
+<span class="o">&lt;</span><span class="k">class</span> <span class="err">&#39;</span><span class="nc">set</span><span class="s1">&#39;&gt;</span>
 </code></pre></div></p>
-<p>※以下のように、<strong>TRUE</strong>や<strong>true</strong>と書くとエラーになる</p>
+<h3 id="12">1.2. 文字列<a class="headerlink" href="#12" title="Permanent link">&para;</a></h3>
 <p>ソースコード
-<div class="highlight"><pre><span></span><code><span class="c1"># 変数の宣言</span>
-<span class="n">valid</span> <span class="o">=</span> <span class="n">TRUE</span>
+<div class="highlight"><pre><span></span><code><span class="c1"># 宣言</span>
+<span class="n">set1</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="s2">&quot;abbcc&quot;</span><span class="p">)</span>
+
+<span class="c1"># 出力</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">set1</span><span class="p">)</span>
 </code></pre></div></p>
 <p>出力結果
-<div class="highlight"><pre><span></span><code><span class="n">Traceback</span> <span class="p">(</span><span class="n">most</span> <span class="n">recent</span> <span class="n">call</span> <span class="n">last</span><span class="p">):</span>
-  <span class="n">File</span> <span class="s2">&quot;Main.py&quot;</span><span class="p">,</span> <span class="n">line</span> <span class="mi">2</span><span class="p">,</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
-  <span class="n">valid</span> <span class="o">=</span> <span class="n">TRUE</span>
-<span class="ne">NameError</span><span class="p">:</span> <span class="n">name</span> <span class="s1">&#39;TRUE&#39;</span> <span class="ow">is</span> <span class="ow">not</span> <span class="n">defined</span>
+<div class="highlight"><pre><span></span><code><span class="p">{</span><span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="s1">&#39;c&#39;</span><span class="p">,</span> <span class="s1">&#39;a&#39;</span><span class="p">}</span>
 </code></pre></div></p>
+<h3 id="13">1.3. リストを<a class="headerlink" href="#13" title="Permanent link">&para;</a></h3>
 <p>ソースコード
-<div class="highlight"><pre><span></span><code><span class="c1"># 変数の宣言</span>
-<span class="n">valid</span> <span class="o">=</span> <span class="n">true</span>
+<div class="highlight"><pre><span></span><code><span class="c1"># 宣言</span>
+<span class="n">set1</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;a&quot;</span><span class="p">,</span><span class="s2">&quot;b&quot;</span><span class="p">,</span><span class="s2">&quot;b&quot;</span><span class="p">,</span><span class="s2">&quot;c&quot;</span><span class="p">,</span><span class="s2">&quot;c&quot;</span><span class="p">}</span>
+
+<span class="c1"># 出力</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">set1</span><span class="p">)</span>
 </code></pre></div></p>
 <p>出力結果
-<div class="highlight"><pre><span></span><code><span class="n">Traceback</span> <span class="p">(</span><span class="n">most</span> <span class="n">recent</span> <span class="n">call</span> <span class="n">last</span><span class="p">):</span>
-  <span class="n">File</span> <span class="s2">&quot;Main.py&quot;</span><span class="p">,</span> <span class="n">line</span> <span class="mi">2</span><span class="p">,</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
-  <span class="n">valid</span> <span class="o">=</span> <span class="n">true</span>
-<span class="ne">NameError</span><span class="p">:</span> <span class="n">name</span> <span class="s1">&#39;true&#39;</span> <span class="ow">is</span> <span class="ow">not</span> <span class="n">defined</span>
+<div class="highlight"><pre><span></span><code><span class="p">{</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="s1">&#39;c&#39;</span><span class="p">}</span>
 </code></pre></div></p>
-</div>
-<input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><label for="__tabbed_1_2">c++</label><div class="tabbed-content">
+<h2 id="2-add">2. 追加(add())<a class="headerlink" href="#2-add" title="Permanent link">&para;</a></h2>
+<ul>
+<li>add()関数を使用する</li>
+</ul>
 <p>ソースコード
-<div class="highlight"><pre><span></span><code><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;iostream&gt;</span><span class="c1">  //stdクラスを使用するのに必要</span><span class="cp"></span>
+<div class="highlight"><pre><span></span><code><span class="c1"># 宣言</span>
+<span class="n">set1</span> <span class="o">=</span> <span class="nb">set</span><span class="p">()</span>
 
-<span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">){</span><span class="w"></span>
-<span class="w">   </span><span class="c1">//変数(valid)の前に使用したい型を記述する</span>
-<span class="w">   </span><span class="kt">bool</span><span class="w"> </span><span class="n">valid</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">true</span><span class="p">;</span><span class="w"></span>
+<span class="c1"># 出力</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">set1</span><span class="p">)</span>
 
-<span class="w">   </span><span class="c1">// 変数の内容の表示</span>
-<span class="w">   </span><span class="c1">// 改行するためには、最後にstd::endlが必要</span>
-<span class="w">   </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">valid</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span><span class="w"></span>
+<span class="c1"># 追加</span>
+<span class="n">set1</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
 
-<span class="w">   </span><span class="c1">// 変数の型の表示</span>
-<span class="w">   </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="k">typeid</span><span class="p">(</span><span class="n">valid</span><span class="p">).</span><span class="n">name</span><span class="p">()</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
+<span class="c1"># 出力</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">set1</span><span class="p">)</span>
 </code></pre></div></p>
-<p>出力結果</p>
-<div class="highlight"><pre><span></span><code><span class="cp"># Ｃ言語側ではfalseは0、trueは1で表示される</span>
-<span class="mi">1</span><span class="w"></span>
-<span class="n">b</span><span class="w"></span>
-</code></pre></div>
-</div>
-</div>
+<p>出力結果
+<div class="highlight"><pre><span></span><code><span class="nb">set</span><span class="p">()</span>
+<span class="p">{</span><span class="mi">3</span><span class="p">}</span>
+</code></pre></div></p>
+<h2 id="3">3. 削除<a class="headerlink" href="#3" title="Permanent link">&para;</a></h2>
+<h3 id="31-discard">3.1. 要素指定で削除(discard())<a class="headerlink" href="#31-discard" title="Permanent link">&para;</a></h3>
+<ul>
+<li>discard()関数を使用する</li>
+<li>指定した要素を削除する</li>
+<li>要素が存在しない場合は<strong>何もしない</strong>  </li>
+</ul>
+<p>ソースコード
+<div class="highlight"><pre><span></span><code><span class="c1"># 宣言</span>
+<span class="n">set1</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">}</span>
+
+<span class="c1"># 出力</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">set1</span><span class="p">)</span>
+
+<span class="c1"># 要素(1)を削除</span>
+<span class="n">set1</span><span class="o">.</span><span class="n">discard</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="c1"># 対象の要素を削除する</span>
+
+<span class="c1"># 出力</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">set1</span><span class="p">)</span>
+
+<span class="c1"># 要素(4)を削除</span>
+<span class="c1"># ※要素が登録されていない場合何もしない</span>
+<span class="n">set1</span><span class="o">.</span><span class="n">discard</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
+
+<span class="c1"># 出力</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">set1</span><span class="p">)</span>
+</code></pre></div></p>
+<p>出力結果
+<div class="highlight"><pre><span></span><code><span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">}</span>
+<span class="p">{</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">}</span>
+<span class="p">{</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">}</span>
+</code></pre></div></p>
+<h3 id="32-pop">3.2. ランダムに要素を取り出して削除する(pop())<a class="headerlink" href="#32-pop" title="Permanent link">&para;</a></h3>
+<p>ソースコード
+<div class="highlight"><pre><span></span><code><span class="c1"># 宣言</span>
+<span class="n">set1</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">}</span>
+
+<span class="c1"># 出力</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">set1</span><span class="p">)</span>
+
+<span class="c1"># 削除</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">set1</span><span class="o">.</span><span class="n">pop</span><span class="p">())</span>
+
+<span class="c1"># 出力</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">set1</span><span class="p">)</span>
+
+<span class="c1"># 削除</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">set1</span><span class="o">.</span><span class="n">pop</span><span class="p">())</span>
+
+<span class="c1"># 出力</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">set1</span><span class="p">)</span>
+</code></pre></div></p>
+<h2 id="4-clear">4. 全削除(clear())<a class="headerlink" href="#4-clear" title="Permanent link">&para;</a></h2>
+<ul>
+<li>clear()関数を使用する</li>
+</ul>
+<p>ソースコード
+<div class="highlight"><pre><span></span><code><span class="c1"># 宣言</span>
+<span class="n">set1</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">}</span>
+
+<span class="c1"># 出力</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">set1</span><span class="p">)</span>
+
+<span class="c1"># 全削除</span>
+<span class="n">set1</span><span class="o">.</span><span class="n">clear</span><span class="p">()</span>
+
+<span class="c1"># 出力</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">set1</span><span class="p">)</span>
+</code></pre></div></p>
+<p>出力結果
+<div class="highlight"><pre><span></span><code>{1, 2, 3}
+set()
+</code></pre></div></p>
 
   <hr>
 <div class="md-source-file">
@@ -661,7 +913,7 @@
     <nav class="md-footer__inner md-grid" aria-label="フッター">
       
         
-        <a href="../01_02_variable%20float/" class="md-footer__link md-footer__link--prev" aria-label="前: 小数点型(float)" rel="prev">
+        <a href="../05_tuples/" class="md-footer__link md-footer__link--prev" aria-label="前: タプル" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -670,20 +922,20 @@
               <span class="md-footer__direction">
                 前
               </span>
-              小数点型(float)
+              タプル
             </div>
           </div>
         </a>
       
       
         
-        <a href="../01_04_variable_str/" class="md-footer__link md-footer__link--next" aria-label="次: 文字列型(str)" rel="next">
+        <a href="../12_ifStatements/" class="md-footer__link md-footer__link--next" aria-label="次: if文" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 次
               </span>
-              文字列型(str)
+              if文
             </div>
           </div>
           <div class="md-footer__button md-icon">
