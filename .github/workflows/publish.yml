@@ -29,7 +29,8 @@ jobs:
           python-version: '3.8'
       - run: python3 -m pip install --upgrade pip
       - run: pip install mkdocs-material
-      - run: pip install mkdocs-git-revision-date-plugin
+      # - run: pip install mkdocs-git-revision-date-plugin
+      - run: pip3 install mkdocs-git-revision-date-localized-plugin
 
       - name: build
         env:
