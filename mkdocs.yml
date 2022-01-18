@@ -115,6 +115,7 @@ nav:
       - 追加    : 04_02_dictionary_add.md
       - 削除    : 04_03_dictionary_delete.md
     - タプル  : 05_tuples.md
+    - 集合    : 06_set.md
     - if文    : 12_ifStatements.md
     - 条件式   :  14_condition.md
     - for文    :  13_forLoops.md
