@@ -97,33 +97,33 @@ extra_css:
 
 
 # # Navigation
-nav:
-    - はじめに: index.md
-    - 実行環境: 00_installation.md
-    - 標準出力: 00_print.md
-    - 変数:
-      - 基本            : 01_00_variable.md
-      - 整数型(int)     : 01_01_variable_int.md
-      - 小数点型(float) : 01_02_variable float.md
-      - 真偽型(bool)    : 01_03_variable bool.md
-      - 文字列型(str)    : 01_04_variable_str.md
-    - 標準入力: 01_input.md
-    - 演算    : 01_calcurate.md
-    - リスト  : 03_list.md
-    - 辞書:
-      - 表示    : 04_01_dictionary_disp.md
-      - 追加    : 04_02_dictionary_add.md
-      - 削除    : 04_03_dictionary_delete.md
-    - タプル  : 05_tuples.md
-    - 集合    : 06_set.md
-    - if文    : 12_ifStatements.md
-    - 条件式   :  14_condition.md
-    - for文    :  13_forLoops.md
-    - 検索アルゴリズム: 21_search_algorithm.md
-    # - while文    :
-    # - while文    : 
-    # - 関数    : 
-    # - 関数    : 
+# nav:
+#     - はじめに: index.md
+#     - 実行環境: 00_installation.md
+#     - 標準出力: 00_print.md
+#     - 変数:
+#       - 基本            : 01_00_variable.md
+#       - 整数型(int)     : 01_01_variable_int.md
+#       - 小数点型(float) : 01_02_variable float.md
+#       - 真偽型(bool)    : 01_03_variable bool.md
+#       - 文字列型(str)    : 01_04_variable_str.md
+#     - 標準入力: 01_input.md
+#     - 演算    : 01_calcurate.md
+#     - リスト  : 03_list.md
+#     - 辞書:
+#       - 表示    : 04_01_dictionary_disp.md
+#       - 追加    : 04_02_dictionary_add.md
+#       - 削除    : 04_03_dictionary_delete.md
+#     - タプル  : 05_tuples.md
+#     - 集合    : 06_set.md
+#     - if文    : 12_ifStatements.md
+#     - 条件式   :  14_condition.md
+#     - for文    :  13_forLoops.md
+#     - 検索アルゴリズム: 21_search_algorithm.md
+#     # - while文    :
+#     # - while文    : 
+#     # - 関数    : 
+#     # - 関数    : 
 
 
 # Google Analytics
