@@ -1,10 +1,14 @@
 # 検索アルゴリズム
 
+
+
+
 ## 1. 線形検索(linear search / Sequential Search)
 - 前提条件
   - リストがソートされている必要がある
   - 計算量(Time complexity): O(n)
   - 領域計算量(space complexity): 
+
 
 
 python

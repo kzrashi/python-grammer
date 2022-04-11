@@ -11,11 +11,6 @@ repo_url: https://github.com/kzrashi/python-grammer
 ## 表示文字列
 repo_name: kzrashi/python-grammer
 
-
-# Copyright
-copyright: "Copyright © 2021 -  kzrashi All Rights Reserved."
-
-
 # Configuration
 theme:
   name: material
@@ -25,76 +20,53 @@ theme:
   icon:
     # Gitリポジトリエリアのアイコン
     repo: fontawesome/brands/github    # icon:
-    #   logo: assets/python_94570.svg
-  #        repo: fontawesome/brands/git-alt
 
   # ファビコン
   favicon: assets/python_94570.svg
   # タブ表示を有効.
   features:
     - tabs
-    # 今テンスをナビゲーションに含める
-    # - toc.integrate
 
-# Plugins
 plugins:
-  - git-revision-date-localized
+   - search:
+      lang: [ja, en]
 
-#    - search:
-#
-#      language: 'en, ja'
-# 検索インデックスの単語区切り文字設定
-#        separator: '[\s\-\.]+'
-
-# Customization
-extra:
-  generator: false
 
 # Extensions
 markdown_extensions:
-  # アラート修飾の設定
-  - admonition
-  # コンテンツ内タブ機能
-  - pymdownx.tabbed
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
   # スーパーフェンス機能の設定
   - pymdownx.superfences
-  # コンテンツの折りたたみ設定
-  - pymdownx.details
-
-  - pymdownx.critic
-  ## ハイライト指定
-  - pymdownx.mark
-
-  # - pymdownx.critic.mode: view
-
-  # - pymdownx.betterem:
-  #   smart_enable: all
-
-  # - pymdownx.caret
-  # - pymdownx.tilde
-  # - pymdownx.smartsymbols
   
-  
-  
+  - pymdownx.arithmatex:
+      generic: true
 
-
-  - codehilite:
-      #        linenums: true
-      guess_lang: false
-      use_pygments: false
-      noclasses: true
-  - toc:
-      permalink: true
-#    - fontawesome_markdown
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js  
+  
 
 # CSS
 extra_css:
   - "css/custom.css"
 
+# Copyright
+copyright: "Copyright © 2021 -  kzrashi All Rights Reserved."
 
 
-
-
+# Customization
+extra:
+  generator: false
 
 # # Navigation
 # nav:
@@ -102,11 +74,11 @@ extra_css:
 #     - 実行環境: 00_installation.md
 #     - 標準出力: 00_print.md
 #     - 変数:
-#       - 基本            : 01_00_variable.md
-#       - 整数型(int)     : 01_01_variable_int.md
-#       - 小数点型(float) : 01_02_variable float.md
-#       - 真偽型(bool)    : 01_03_variable bool.md
-#       - 文字列型(str)    : 01_04_variable_str.md
+#       - 基本            : 01_type/01_00_variable.md
+#       - 整数型(int)     : 01_type/01_01_variable_int.md
+#       - 小数点型(float) : 01_type/01_02_variable float.md
+#       - 真偽型(bool)    : 01_type/01_03_variable bool.md
+#       - 文字列型(str)    : 01_type/01_04_variable_str.md
 #     - 標準入力: 01_input.md
 #     - 演算    : 01_calcurate.md
 #     - リスト  : 03_list.md
@@ -119,14 +91,13 @@ extra_css:
 #     - if文    : 12_ifStatements.md
 #     - 条件式   :  14_condition.md
 #     - for文    :  13_forLoops.md
-#     - 検索アルゴリズム: 21_search_algorithm.md
-#     # - while文    :
-#     # - while文    : 
-#     # - 関数    : 
-#     # - 関数    : 
+#     - 検索アルゴリズム: 
+#       - LinerSearch: 21_algorithm/21_search_algorithm.md
+#       - BFS: 21_algorithm/22_tree.md
 
 
 # Google Analytics
 google_analytics:
   - !!python/object/apply:os.getenv ["GOOGLE_ANALYTICS_KEY"]
   - auto
+
