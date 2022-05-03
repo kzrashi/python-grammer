@@ -2,127 +2,207 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://kzrashi.github.io/python-grammer/</loc>
-         <lastmod>2022-04-12</lastmod>
+         <lastmod>2022-05-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://kzrashi.github.io/python-grammer/00_installation/00_installation/</loc>
-         <lastmod>2022-04-12</lastmod>
+         <lastmod>2022-05-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://kzrashi.github.io/python-grammer/01_type/00_00_variable/</loc>
-         <lastmod>2022-04-12</lastmod>
+         <lastmod>2022-05-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://kzrashi.github.io/python-grammer/01_type/00_01_variable_name/</loc>
-         <lastmod>2022-04-12</lastmod>
+         <lastmod>2022-05-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://kzrashi.github.io/python-grammer/01_type/00_type_cast/</loc>
-         <lastmod>2022-04-12</lastmod>
+         <lastmod>2022-05-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://kzrashi.github.io/python-grammer/01_type/01_01_variable_int/</loc>
-         <lastmod>2022-04-12</lastmod>
+         <lastmod>2022-05-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://kzrashi.github.io/python-grammer/01_type/01_02_variable%20float/</loc>
-         <lastmod>2022-04-12</lastmod>
+         <lastmod>2022-05-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://kzrashi.github.io/python-grammer/01_type/01_03_variable%20bool/</loc>
-         <lastmod>2022-04-12</lastmod>
+         <lastmod>2022-05-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://kzrashi.github.io/python-grammer/01_type/01_04_variable_str/</loc>
-         <lastmod>2022-04-12</lastmod>
+         <lastmod>2022-05-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://kzrashi.github.io/python-grammer/01_type/01_05_variable_str_function/</loc>
-         <lastmod>2022-04-12</lastmod>
+         <lastmod>2022-05-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://kzrashi.github.io/python-grammer/01_type/01_06_variable_str_bin/</loc>
+         <lastmod>2022-05-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://kzrashi.github.io/python-grammer/02_List/03_list/</loc>
-         <lastmod>2022-04-12</lastmod>
+         <lastmod>2022-05-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://kzrashi.github.io/python-grammer/02_List/03_list_sort/</loc>
-         <lastmod>2022-04-12</lastmod>
+         <lastmod>2022-05-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://kzrashi.github.io/python-grammer/03_dict/04_01_dictionary_disp/</loc>
-         <lastmod>2022-04-12</lastmod>
+         <lastmod>2022-05-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://kzrashi.github.io/python-grammer/03_dict/04_02_dictionary_add/</loc>
-         <lastmod>2022-04-12</lastmod>
+         <lastmod>2022-05-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://kzrashi.github.io/python-grammer/03_dict/04_03_dictionary_delete/</loc>
-         <lastmod>2022-04-12</lastmod>
+         <lastmod>2022-05-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://kzrashi.github.io/python-grammer/04_set/06_set/</loc>
-         <lastmod>2022-04-12</lastmod>
+         <lastmod>2022-05-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://kzrashi.github.io/python-grammer/05_tuple/05_tuples/</loc>
-         <lastmod>2022-04-12</lastmod>
+         <lastmod>2022-05-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://kzrashi.github.io/python-grammer/11_condition/00_print/</loc>
-         <lastmod>2022-04-12</lastmod>
+         <lastmod>2022-05-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://kzrashi.github.io/python-grammer/11_condition/01_calcurate/</loc>
-         <lastmod>2022-04-12</lastmod>
+         <lastmod>2022-05-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://kzrashi.github.io/python-grammer/11_condition/01_input/</loc>
-         <lastmod>2022-04-12</lastmod>
+         <lastmod>2022-05-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://kzrashi.github.io/python-grammer/11_condition/12_ifStatements/</loc>
-         <lastmod>2022-04-12</lastmod>
+         <lastmod>2022-05-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://kzrashi.github.io/python-grammer/11_condition/13_forLoops/</loc>
-         <lastmod>2022-04-12</lastmod>
+         <lastmod>2022-05-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://kzrashi.github.io/python-grammer/11_condition/14_condition/</loc>
-         <lastmod>2022-04-12</lastmod>
+         <lastmod>2022-05-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://kzrashi.github.io/python-grammer/12_calcurate/01_cal/</loc>
+         <lastmod>2022-05-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://kzrashi.github.io/python-grammer/13_class/01_base/</loc>
+         <lastmod>2022-05-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://kzrashi.github.io/python-grammer/13_class/02_inheritance/</loc>
+         <lastmod>2022-05-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://kzrashi.github.io/python-grammer/13_class/03_abstractClass/</loc>
+         <lastmod>2022-05-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://kzrashi.github.io/python-grammer/13_class/04_multipleInheritance/</loc>
+         <lastmod>2022-05-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://kzrashi.github.io/python-grammer/13_class/05_static/</loc>
+         <lastmod>2022-05-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://kzrashi.github.io/python-grammer/21_algorithm/21_search_algorithm/</loc>
-         <lastmod>2022-04-12</lastmod>
+         <lastmod>2022-05-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://kzrashi.github.io/python-grammer/21_algorithm/22_backTracking/</loc>
+         <lastmod>2022-05-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://kzrashi.github.io/python-grammer/21_algorithm/22_tree/</loc>
-         <lastmod>2022-04-12</lastmod>
+         <lastmod>2022-05-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://kzrashi.github.io/python-grammer/21_algorithm/23.backtrackng/</loc>
+         <lastmod>2022-05-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://kzrashi.github.io/python-grammer/21_algorithm/23.heap/</loc>
+         <lastmod>2022-05-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://kzrashi.github.io/python-grammer/21_algorithm/24_dp/</loc>
+         <lastmod>2022-05-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://kzrashi.github.io/python-grammer/21_algorithm/99.coontent/</loc>
+         <lastmod>2022-05-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://kzrashi.github.io/python-grammer/22_collentions_lib/01_Counter/</loc>
+         <lastmod>2022-05-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://kzrashi.github.io/python-grammer/31_rule/01_rule/</loc>
+         <lastmod>2022-05-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://kzrashi.github.io/python-grammer/99_other/english/</loc>
+         <lastmod>2022-05-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://kzrashi.github.io/python-grammer/99_other/example/</loc>
+         <lastmod>2022-05-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
