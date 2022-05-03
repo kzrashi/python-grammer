@@ -11,6 +11,7 @@
 ### 2.1. メソッド
 - 元の配列を直接編集する
 - 降順(descending order)でソートしたい場合には、`reverse=True`を設定する
+<!-- -->
 ```python title="python ソースコード"
 my_list = [13,9,4]
 
