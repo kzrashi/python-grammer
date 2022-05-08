@@ -1,14 +1,13 @@
 # リスト内包表記(List Comprehensions)
-- リスト**ないほうひょうき**と読む
-- 
 
-## bssic
+## basic
+- リスト**ないほうひょうき**と読む
 - リストを初期化時に、１行で特定のルールで変数を代入出来る
 - for文で代入するより**処理速度が早い**
 - `[代入 iteration文]`や`[代入 iteration文 条件式]`の形で記述する
 
 
-```python title="python ソースコード"  hl_lines="1 3"
+```python title="python ソースコード"  hl_lines="1-3"
 # リスト内包表記を使用しない場合
 my_list1 = []
 for i in range(10):
