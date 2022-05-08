@@ -96,6 +96,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://kzrashi.github.io/python-grammer/10_multi/01_compare/</loc>
+         <lastmod>2022-05-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://kzrashi.github.io/python-grammer/11_condition/00_print/</loc>
          <lastmod>2022-05-08</lastmod>
          <changefreq>daily</changefreq>
