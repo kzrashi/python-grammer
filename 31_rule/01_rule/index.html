@@ -457,8 +457,22 @@
   
   
     <li class="md-nav__item">
-      <a href="../../02_List/03_list/" class="md-nav__link">
+      <a href="../../02_List/01_list/" class="md-nav__link">
         リスト(List)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../02_List/03_list_comprehentions/" class="md-nav__link">
+        リスト内包表記(List Comprehensions)
       </a>
     </li>
   
@@ -961,6 +975,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../../21_algorithm/01_function_speed/" class="md-nav__link">
+        処理速度
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../21_algorithm/21_search_algorithm/" class="md-nav__link">
         検索アルゴリズム
       </a>
@@ -1177,15 +1205,76 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#import" class="md-nav__link">
-    import
+  <a href="#1-import" class="md-nav__link">
+    1. import
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#main" class="md-nav__link">
-    mainの書き方
+  <a href="#2-main" class="md-nav__link">
+    2. mainの書き方
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    3. 変数宣言
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    4. 判定文
+  </a>
+  
+    <nav class="md-nav" aria-label="4. 判定文">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-not" class="md-nav__link">
+    4.1. notを使うポイント
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-none" class="md-nav__link">
+    4.2. Noneを使うポイント
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-80" class="md-nav__link">
+    5. 80文字を超える場合
+  </a>
+  
+    <nav class="md-nav" aria-label="5. 80文字を超える場合">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51" class="md-nav__link">
+    5.1. 関数
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    6. 判定条件
   </a>
   
 </li>
@@ -1294,15 +1383,76 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#import" class="md-nav__link">
-    import
+  <a href="#1-import" class="md-nav__link">
+    1. import
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#main" class="md-nav__link">
-    mainの書き方
+  <a href="#2-main" class="md-nav__link">
+    2. mainの書き方
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    3. 変数宣言
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    4. 判定文
+  </a>
+  
+    <nav class="md-nav" aria-label="4. 判定文">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-not" class="md-nav__link">
+    4.1. notを使うポイント
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-none" class="md-nav__link">
+    4.2. Noneを使うポイント
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-80" class="md-nav__link">
+    5. 80文字を超える場合
+  </a>
+  
+    <nav class="md-nav" aria-label="5. 80文字を超える場合">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51" class="md-nav__link">
+    5.1. 関数
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    6. 判定条件
   </a>
   
 </li>
@@ -1326,24 +1476,106 @@
 
 
 <h1 id="rule">rule</h1>
-<h2 id="import">import</h2>
+<h2 id="1-import">1. import</h2>
 <ul>
 <li>標準 -&gt; 3rd party -&gt; 自作の順にimportする</li>
-</ul>
+<li>アルファベット順に並べる</li>
+<li>importとconst値の間は２行空ける</li>
+<li>constと関数宣言の間は２行空ける
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">import</span> <span class="nn">xxx</span>
 <a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="kn">import</span> <span class="nn">yyy</span>
 <a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
 <a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="kn">import</span> <span class="nn">zzzz</span>
 <a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="kn">import</span> <span class="mi">111</span>
-</code></pre></div>
-<h2 id="main">mainの書き方</h2>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="kn">import</span> <span class="nn">custom</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="err">★</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="err">★</span>
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="n">AAA</span> <span class="o">=</span> <span class="mi">200</span>
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="err">★</span>
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="err">★</span>
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="k">def</span> <span class="nf">func</span><span class="p">()</span>
+</code></pre></div></li>
+</ul>
+<h2 id="2-main">2. mainの書き方</h2>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
 <a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;aaa&quot;</span><span class="p">)</span>
 <a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>
 <a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>
 <a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
 <a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>    <span class="n">main</span><span class="p">()</span>
+</code></pre></div>
+<h2 id="3">3. 変数宣言</h2>
+<ul>
+<li><code>変数名</code>, <code>=</code> <code>値</code>でインデントは合わせない
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1"># NGケース</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="n">x</span>         <span class="o">=</span> <span class="mi">100</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="n">yyy</span>       <span class="o">=</span> <span class="mi">200</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="n">zzzzzzzzz</span> <span class="o">=</span> <span class="mi">300</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="c1"># OKケース</span>
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="n">x</span> <span class="o">=</span> <span class="mi">100</span>
+<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="n">yyy</span> <span class="o">=</span> <span class="mi">200</span>
+<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="n">zzzzzzzzz</span> <span class="o">=</span> <span class="mi">300</span>
+</code></pre></div></li>
+</ul>
+<h2 id="4">4. 判定文</h2>
+<h3 id="41-not">4.1. notを使うポイント</h3>
+<ul>
+<li>
+<p>booleanの判定ではnotを使う
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="n">x</span> <span class="o">=</span> <span class="kc">True</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="k">if</span> <span class="ow">not</span> <span class="n">x</span><span class="p">:</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;NG&#39;</span><span class="p">)</span>
+</code></pre></div></p>
+</li>
+<li>
+<p>リストの空判定で使用する</p>
+</li>
+<li>辞書のキーが
+<div class="highlight"><span class="filename">python ソースコード</span><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="n">x</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="k">if</span> <span class="n">x</span><span class="p">:</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;list has elements.&#39;</span><span class="p">)</span>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="n">y</span> <span class="o">=</span> <span class="p">[]</span>
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="k">if</span> <span class="ow">not</span> <span class="n">y</span><span class="p">:</span>
+<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;list doesn&#39;t have elements.&quot;</span><span class="p">)</span>
+</code></pre></div></li>
+</ul>
+<div class="highlight"><span class="filename">python 出力結果</span><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="nb">list</span> <span class="n">has</span> <span class="n">elements</span><span class="o">.</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="nb">list</span> <span class="n">doesn</span><span class="s1">&#39;t have elements.</span>
+</code></pre></div>
+<h3 id="42-none">4.2. Noneを使うポイント</h3>
+<ul>
+<li>アドレスの判定ではNoneを使うべき</li>
+</ul>
+<div class="highlight"><span class="filename">python ソースコード</span><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="k">def</span> <span class="nf">func</span><span class="p">(</span><span class="n">node</span><span class="p">):</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>    <span class="k">if</span> <span class="n">node</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;error&quot;</span><span class="p">)</span>
+</code></pre></div>
+<h2 id="5-80">5. 80文字を超える場合</h2>
+<h3 id="51">5.1. 関数</h3>
+<ul>
+<li>引数の区切りで改行する</li>
+<li>上の引数と位置をあわせる</li>
+<li>次の引数の頭にはスペース1つを挿入する</li>
+<li>デフォルト引数の<code>=</code>前後には<strong>スペースはあけない</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="k">def</span> <span class="nf">func</span><span class="p">(</span><span class="n">num1</span><span class="p">,</span> <span class="n">num2</span><span class="p">,</span> <span class="n">num3</span><span class="p">,</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>              <span class="o">^</span><span class="err">★</span>
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>         <span class="n">num4</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>         <span class="o">^</span><span class="err">★</span> <span class="o">^^</span>        
+</code></pre></div></li>
+</ul>
+<h2 id="6">6. 判定条件</h2>
+<ul>
+<li>基本的に<code>()</code>はつけない</li>
+<li>複数条件で必要な場合に<code>()</code>を付与する</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="k">if</span> <span class="n">x</span> <span class="o">==</span><span class="mi">1</span> <span class="ow">and</span> <span class="n">y</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>    <span class="n">xxx</span>
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="k">if</span> <span class="p">(</span><span class="n">x</span> <span class="o">==</span> <span class="mi">1</span> <span class="ow">and</span> <span class="n">y</span> <span class="o">==</span><span class="mi">1</span> <span class="p">)</span> <span class="ow">or</span> <span class="p">(</span><span class="n">z</span> <span class="o">==</span> <span class="mi">1</span> <span class="ow">and</span> <span class="n">a</span> <span class="o">==</span> <span class="mi">2</span><span class="p">):</span>
+<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>    <span class="n">xxx</span>
 </code></pre></div>
 
               
