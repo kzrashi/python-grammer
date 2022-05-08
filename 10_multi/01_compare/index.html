@@ -1350,6 +1350,7 @@
 <th align="left">tuple</th>
 <th align="left">map</th>
 <th align="left">set</th>
+<th align="left">補足説明</th>
 </tr>
 </thead>
 <tbody>
@@ -1359,6 +1360,7 @@
 <td align="left">x = ()</td>
 <td align="left">-</td>
 <td align="left">x = {}</td>
+<td align="left"></td>
 </tr>
 <tr>
 <td align="left">空宣言2</td>
@@ -1366,13 +1368,31 @@
 <td align="left">x = tuple()</td>
 <td align="left">x = map()</td>
 <td align="left">x = set()</td>
+<td align="left"></td>
 </tr>
 <tr>
 <td align="left">宣言2</td>
-<td align="left">x = [1, 2, 3]</td>
-<td align="left">x = (1,2,3)</td>
-<td align="left">x = {1,2,3}</td>
-<td align="left">x = {1,2,3}</td>
+<td align="left">x = [1, 2]</td>
+<td align="left">x = (1, 2)</td>
+<td align="left">x = {"key"1: 1, "key2": 2}</td>
+<td align="left">x = {1, 2}</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">アクセス</td>
+<td align="left">x[0]</td>
+<td align="left">-</td>
+<td align="left">x['key1']</td>
+<td align="left">-</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">アクセス2</td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
 </tr>
 <tr>
 <td align="left">追加</td>
@@ -1380,6 +1400,55 @@
 <td align="left">-</td>
 <td align="left">x['key1']=4</td>
 <td align="left">x.add(4)</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">更新</td>
+<td align="left">x[0]=100</td>
+<td align="left">-</td>
+<td align="left">x['key1']=100</td>
+<td align="left">-</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">削除(最後尾)</td>
+<td align="left">x.pop()</td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">x.discard(1)</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">削除(キー指定)</td>
+<td align="left">x.pop(index)</td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">x.discard(key)</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">削除(エラーなし)</td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">x.discard(1)</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">削除(エラーあり)</td>
+<td align="left">x.remove(1)</td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">x.remove(1)</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">全削除</td>
+<td align="left">x.clear()</td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">x.clear()</td>
+<td align="left"></td>
 </tr>
 </tbody>
 </table>
