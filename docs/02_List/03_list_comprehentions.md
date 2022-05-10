@@ -29,7 +29,7 @@ print(my_list2)
 
 <br>
 
-```python title="python ソースコード"  hl_lines="1 3"
+```python title="python ソースコード"  hl_lines="1-4 12ß"
 # リスト内包表記を使用しない場合
 my_list3 = []
 for i in range(10):
