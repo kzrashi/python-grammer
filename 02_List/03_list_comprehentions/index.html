@@ -15,7 +15,7 @@
         <link rel="canonical" href="https://kzrashi.github.io/python-grammer/02_List/03_list_comprehentions/">
       
       <link rel="icon" href="../../assets/python_94570.svg">
-      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.13">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.14">
     
     
       
@@ -23,7 +23,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.e411adfe.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.3de6f41f.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.cc9b2e1e.min.css">
@@ -36,8 +36,8 @@
         
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=UD+デジタル+教科書体+NK-R:300,300i,400,400i,700,700i%7CUDデジタル教科書体N-R:400,400i,700,700i&display=fallback">
-        <style>:root{--md-text-font:"UD デジタル 教科書体 NK-R";--md-code-font:"UDデジタル教科書体N-R"}</style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=UD+デジタル+教科書体+NK-R,ヒラギノ角ゴシック:300,300i,400,400i,700,700i%7CUDデジタル教科書体N-R:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"UD デジタル 教科書体 NK-R,ヒラギノ角ゴシック";--md-code-font:"UDデジタル教科書体N-R"}</style>
       
     
     
@@ -509,13 +509,6 @@
         <li class="md-nav__item">
   <a href="#1-basic" class="md-nav__link">
     1. basic
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2-reference" class="md-nav__link">
-    2. reference
   </a>
   
 </li>
@@ -1376,13 +1369,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#2-reference" class="md-nav__link">
-    2. reference
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -1426,23 +1412,22 @@
 <a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">]</span>
 </code></pre></div>
 <p><br></p>
-<div class="highlight"><span class="filename">python ソースコード</span><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="hll"><span class="c1"># リスト内包表記を使用しない場合</span>
-</span><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="n">my_list3</span> <span class="o">=</span> <span class="p">[]</span>
-<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="hll"><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
-</span><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>    <span class="k">if</span> <span class="n">i</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
-<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>        <span class="n">my_list3</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
-<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="nb">print</span><span class="p">(</span><span class="n">my_list3</span><span class="p">)</span>
-<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>
-<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="c1"># ↓</span>
-<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="c1"># ↓</span>
-<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>
-<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="c1"># リスト内包表記を使用する場合</span>
-<a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="n">my_list4</span> <span class="o">=</span> <span class="p">[</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span> <span class="k">if</span> <span class="n">i</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">]</span>
-<a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a><span class="nb">print</span><span class="p">(</span><span class="n">my_list4</span><span class="p">)</span>
-</code></pre></div>
-<div class="highlight"><span class="filename">python 出力結果</span><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">8</span><span class="p">]</span>
-<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">8</span><span class="p">]</span>
-</code></pre></div>
+<p>```python title="python ソースコード"  hl_lines="1-4 12ß"</p>
+<h1 id="_1">リスト内包表記を使用しない場合</h1>
+<p>my_list3 = []
+for i in range(10):
+    if i % 2 == 0:
+        my_list3.append(i)
+print(my_list3)</p>
+<h1 id="_2">↓</h1>
+<h1 id="_3">↓</h1>
+<h1 id="_4">リスト内包表記を使用する場合</h1>
+<p>my_list4 = [i for i in range(10) if i % 2 == 0]
+print(my_list4)
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>```python  title=&quot;python 出力結果&quot;
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>[0, 2, 4, 6, 8]
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>[0, 2, 4, 6, 8]
+</code></pre></div></p>
 <h2 id="2-reference">2. reference</h2>
 
               
@@ -1511,7 +1496,7 @@
     <script id="__config" type="application/json">{"base": "../..", "features": ["tabs"], "search": "../../assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.config.lang": "ja", "search.config.pipeline": "trimmer, stemmer", "search.config.separator": "[\\s\\-\u3000\u3001\u3002\uff0c\uff0e]+", "search.placeholder": "\u691c\u7d22", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version.title": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.ed9748b7.min.js"></script>
+      <script src="../../assets/javascripts/bundle.c2e1ee47.min.js"></script>
       
         <script src="../../javascripts/mathjax.js"></script>
       
