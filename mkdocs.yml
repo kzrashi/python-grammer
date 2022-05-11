@@ -15,7 +15,7 @@ repo_name: kzrashi/python-grammer
 theme:
   name: material
   font:
-    text: ["UD デジタル 教科書体 NK-R","ヒラギノ角ゴシック"]   #Regular font(通常フォント)
+    text: "UD デジタル 教科書体 NK-R"   #Regular font(通常フォント)
     code: "UDデジタル教科書体N-R"       #Monospaced font(等幅フォント)
   language: ja
   # 左上のアイコン
