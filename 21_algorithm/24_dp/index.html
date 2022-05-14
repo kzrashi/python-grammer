@@ -1195,19 +1195,25 @@
     xxx
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
+    <nav class="md-nav" aria-label="xxx">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#memoization" class="md-nav__link">
     memoization
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#dp" class="md-nav__link">
     DP
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1312,12 +1318,60 @@
       
       
         <label class="md-nav__link" for="__nav_15">
+          23  functools lib
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="23  functools lib" data-md-level="1">
+        <label class="md-nav__title" for="__nav_15">
+          <span class="md-nav__icon md-icon"></span>
+          23  functools lib
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../23_%20functools_lib/01_LRU/" class="md-nav__link">
+        lru_cache
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_16" type="checkbox" id="__nav_16" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_16">
           31 rule
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="31 rule" data-md-level="1">
-        <label class="md-nav__title" for="__nav_15">
+        <label class="md-nav__title" for="__nav_16">
           <span class="md-nav__icon md-icon"></span>
           31 rule
         </label>
@@ -1354,18 +1408,18 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_16" type="checkbox" id="__nav_16" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_17" type="checkbox" id="__nav_17" >
       
       
       
       
-        <label class="md-nav__link" for="__nav_16">
+        <label class="md-nav__link" for="__nav_17">
           99 other
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="99 other" data-md-level="1">
-        <label class="md-nav__title" for="__nav_16">
+        <label class="md-nav__title" for="__nav_17">
           <span class="md-nav__icon md-icon"></span>
           99 other
         </label>
@@ -1436,19 +1490,25 @@
     xxx
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
+    <nav class="md-nav" aria-label="xxx">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#memoization" class="md-nav__link">
     memoization
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#dp" class="md-nav__link">
     DP
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1480,23 +1540,15 @@
 <h1 id="dpdynamic-programming">DP(Dynamic Programming)</h1>
 <p>動的計画法と呼ばれるアルゴリズム</p>
 <h2 id="xxx">xxx</h2>
-<h2 id="memoization">memoization</h2>
+<h3 id="memoization">memoization</h3>
 <p>メモ化再起</p>
-<h2 id="dp">DP</h2>
+<h3 id="dp">DP</h3>
 <p>ボトムアップで求めていく</p>
 <h2 id="reference">reference</h2>
 <ul>
 <li><a href="https://www.momoyama-usagi.com/entry/info-algo-dp">うさぎでもわかるアルゴリズム　動的計画法</a></li>
 <li><a href="https://yutakasasaki.hatenablog.com/entry/20100423/1271991176#:~:text=%E3%82%B3%E3%83%BC%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E3%83%AC%E3%83%99%E3%83%AB%E3%81%A7%E3%81%AE,%E3%81%AE%E3%82%B3%E3%83%BC%E3%83%89%E3%81%AB%E3%81%AA%E3%82%8A%E3%81%BE%E3%81%99%E3%80%82">動的計画法とメモ化</a></li>
 </ul>
-<p>[
-                             8         10
-8   [0, 0, 0, 0, 0, 0, 0, 0, 120, 120, 120, 120, 120, 120, 120, 120, 120, 120, 120, 120, 120, 120, 120, 120, 120, 120, 120, 120, 120, 120, 120], 
-10  [0, 0, 0, 0, 0, 0, 0, 0, 120, 120, 150, 150, 150, 150, 150, 150, 150, 150, 270, 270, 270, 270, 270, 270, 270, 270, 270, 270, 270, 270, 270], 
-7   [0, 0, 0, 0, 0, 0, 0, 140, 140, 140, 150, 150, 150, 150, 150, 260, 260, 290, 290, 290, 290, 290, 290, 290, 290, 410, 410, 410, 410, 410, 410], 
-6   [0, 0, 0, 0, 0, 0, 110, 140, 140, 140, 150, 150, 150, 250, 250, 260, 260, 290, 290, 290, 290, 370, 370, 400, 400, 410, 410, 410, 410, 410, 410], 
-7   [0, 0, 0, 0, 0, 0, 110, 140, 140, 140, 150, 150, 150, 250, 250, 260, 260, 290, 290, 290, 350, 370, 370, 400, 400, 410, 410, 410, 470, 470, 500]]
-500</p>
 
               
             </article>
