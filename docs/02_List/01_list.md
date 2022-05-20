@@ -373,3 +373,32 @@ print(myList)
 [1, 2, 1, 'str']
 [2, 1, 'str']
 ```
+
+## 4. 検索
+### 4.1. 最初にヒットしたものを取得する場合
+- `index(検索する値`で検索し、最初にヒットしたインデックス値を返却する
+- 検索キーが存在しない場合、例外の`ValueError`を返却する
+
+```python title="python ソースコード"
+l = ['a','a','b', 'b', 'c', 'c', 'c']
+print(l.index("c"))
+print(l.index("d"))
+```
+
+```python  title="python 出力結果"
+4
+ValueError: 'd' is not in list
+```
+
+### 4.2. 全てのヒットを取得する場合
+- リスト内包表記で検索して取得する
+
+```python title="python ソースコード"
+l = ['a','a','b', 'b', 'c', 'c', 'c']
+print([ idx for idx, num in enumerate(l) if num == "b"  ] )
+```
+
+```python  title="python 出力結果"
+[2, 3]
+```
+
