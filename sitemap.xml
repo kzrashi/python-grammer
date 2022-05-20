@@ -211,6 +211,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://kzrashi.github.io/python-grammer/22_collentions_lib/02_defaultdict/</loc>
+         <lastmod>2022-05-20</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://kzrashi.github.io/python-grammer/23_%20functools_lib/01_LRU/</loc>
          <lastmod>2022-05-20</lastmod>
          <changefreq>daily</changefreq>
