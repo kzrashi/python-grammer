@@ -102,3 +102,22 @@ azzcdefg
 abbcdefg
 ```
 
+## 3. ソート系
+### 3.1. sorted()
+- 組み込み関数の`sorted(文字列)`を渡すことでアルファベット順にソートされたリストデータを返す
+- str型ではなくlist型で返ってくるためjoinメソッドで結合してstr型に戻すこと
+
+```python title="python ソースコード"
+s = "sample"
+
+print(s)
+print(sorted(s))
+print("".join(sorted(s)))
+```
+
+```python  title="python 出力結果"
+sample
+['a', 'e', 'l', 'm', 'p', 's']
+aelmps
+```
+
