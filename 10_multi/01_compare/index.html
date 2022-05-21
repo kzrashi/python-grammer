@@ -789,8 +789,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#strlist" class="md-nav__link">
-    strとListの比較
+  <a href="#1-listtupledictset" class="md-nav__link">
+    1. list/tuple/dict/set
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-strlist" class="md-nav__link">
+    2. strとlistの比較
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-listdequeheap" class="md-nav__link">
+    3. list/deque/heapの比較
   </a>
   
 </li>
@@ -1473,8 +1487,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#strlist" class="md-nav__link">
-    strとListの比較
+  <a href="#1-listtupledictset" class="md-nav__link">
+    1. list/tuple/dict/set
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-strlist" class="md-nav__link">
+    2. strとlistの比較
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-listdequeheap" class="md-nav__link">
+    3. list/deque/heapの比較
   </a>
   
 </li>
@@ -1498,13 +1526,14 @@
 
 
 <h1 id="collections">collectionsタイプの比較</h1>
+<h2 id="1-listtupledictset">1. list/tuple/dict/set</h2>
 <table>
 <thead>
 <tr>
 <th align="left">xxx</th>
 <th align="left">list</th>
 <th align="left">tuple</th>
-<th align="left">map</th>
+<th align="left">dict</th>
 <th align="left">set</th>
 <th align="left">補足説明</th>
 </tr>
@@ -1522,7 +1551,7 @@
 <td align="left">空宣言2</td>
 <td align="left">x = list()</td>
 <td align="left">x = tuple()</td>
-<td align="left">x = map()</td>
+<td align="left">x = dict()</td>
 <td align="left">x = set()</td>
 <td align="left"></td>
 </tr>
@@ -1567,6 +1596,14 @@
 <td align="left"></td>
 </tr>
 <tr>
+<td align="left">削除(最初)</td>
+<td align="left">del x[0]</td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">x.discard(1)</td>
+<td align="left"></td>
+</tr>
+<tr>
 <td align="left">削除(最後尾)</td>
 <td align="left">x.pop()</td>
 <td align="left"></td>
@@ -1608,7 +1645,7 @@
 </tr>
 </tbody>
 </table>
-<h2 id="strlist">strとListの比較</h2>
+<h2 id="2-strlist">2. strとlistの比較</h2>
 <table>
 <thead>
 <tr>
@@ -1641,6 +1678,62 @@
 <td align="left"></td>
 <td align="left"></td>
 <td align="left"></td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h2 id="3-listdequeheap">3. list/deque/heapの比較</h2>
+<table>
+<thead>
+<tr>
+<th align="left">xxx</th>
+<th align="left">list型</th>
+<th align="left">deque型</th>
+<th align="left">heap型</th>
+<th align="left">補足説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">空宣言</td>
+<td align="left">x= []</td>
+<td align="left">x = collections.deque([],3)</td>
+<td align="left">x= []  heapq.heapify(x)</td>
+<td align="left">dequeは第２引数でサイズ指定が可能</td>
+</tr>
+<tr>
+<td align="left">宣言</td>
+<td align="left">x= [1]</td>
+<td align="left">x = collections.deque([1],3)</td>
+<td align="left">x= [1] heapq.heapify(x)</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">末尾に挿入</td>
+<td align="left">x.append(1)</td>
+<td align="left">x.append(1)</td>
+<td align="left">heapq.heappush(1)</td>
+<td align="left">heapは最小値が</td>
+</tr>
+<tr>
+<td align="left">末尾から削除</td>
+<td align="left">x.pop()</td>
+<td align="left">x.pop()</td>
+<td align="left">-</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">先頭に挿入</td>
+<td align="left">x.insert(0, 1)</td>
+<td align="left">x.appendleft(1)</td>
+<td align="left">heapq.heappush(1)</td>
+<td align="left">heapは最小値が先頭に来る</td>
+</tr>
+<tr>
+<td align="left">先頭から削除</td>
+<td align="left">del x[0]</td>
+<td align="left">x.popleft()</td>
+<td align="left">heapq.heappop()</td>
 <td align="left"></td>
 </tr>
 </tbody>
