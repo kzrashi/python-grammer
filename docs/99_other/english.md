@@ -12,6 +12,7 @@
 | recursively | 再帰的に                  | we recursively process Tree Nodes. |
 | follow      | 従う                     | This problem followes |
 | represent      | 表す                     | variable x represent position. | 変数xは位置を表します.
+| flip           | 反転する                 | Flip an image horizontally| 画像を水平に反転する
 
 ## 2. calcurate 
 
